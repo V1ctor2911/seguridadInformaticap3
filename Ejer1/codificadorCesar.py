@@ -1,6 +1,6 @@
 
 def function(n):    
-    nombre = input().upper()
+    nombre = input("Escriba la palabra a codificar:\n").upper()
     cadena = ""
     abecedario = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
   
@@ -21,5 +21,5 @@ def function(n):
 
 
 
-desplazamiento = int(input("Escriba su clave (numero de desplazamiento):"))
+desplazamiento = int(input("Escriba su clave (numero de desplazamiento):\n"))
 function(desplazamiento)
