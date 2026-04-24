@@ -8,8 +8,8 @@ for i in range(0,limite):
     vigenere.append(alfabeto.copy())
     alfabeto.append(alfabeto.pop(0))
 
-clave = input()
-mensaje = input()
+clave = input().strip()
+mensaje = input().strip()
 
 claves = []
 
