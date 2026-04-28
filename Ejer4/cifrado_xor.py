@@ -8,9 +8,8 @@ def operador_xor(texto, clave):
         resultado += chr(valor_xor)
     return resultado
 
-
-cadena_cifrada = input("Introduzca la cadena_cifrada: ").strip()
+cadena_sin_cifrar = input("Introduzca la cadena a crifrar: ").strip()
 clave = input("Introduzca la clave: ").strip()
 
-mensaje_descifrado = operador_xor(cadena_cifrada, clave)
-print("Resultado decodificado:  " + mensaje_descifrado)
+mensaje_recodificado = operador_xor(cadena_sin_cifrar, clave)
+print("Resultado codificado: "+ mensaje_recodificado)
