@@ -47,7 +47,6 @@ Práctica desarrollada por:
 * Víctor Omar Llantoy Núñez del Arco
 * Adam El Kassmi Serroukh
 
+  ---
 
-
-
-Universidad Rey Juan Carlos (URJC) - Grado en Ingeniería Informática / Seguridad Informática
+**Universidad Rey Juan Carlos (URJC)** *Grado en Ingeniería Informática | Seguridad Informática*
