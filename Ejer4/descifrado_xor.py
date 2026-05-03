@@ -9,7 +9,7 @@ def operador_xor(texto, clave):
     return resultado
 
 
-cadena_cifrada = input("Introduzca la cadena_cifrada: ").strip()
+cadena_cifrada = input("Introduzca la cadena cifrada: ").strip()
 clave = input("Introduzca la clave: ").strip()
 
 mensaje_descifrado = operador_xor(cadena_cifrada, clave)

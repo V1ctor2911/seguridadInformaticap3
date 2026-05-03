@@ -7,7 +7,7 @@ def descifrar_aes(texto_hexadecimal, clave, vector_inicializacion):
     clave_bytes = clave.encode('utf-8')
     iv_bytes = vector_inicializacion.encode('utf-8')
     
-    # Creamos el motor de descifrado y desencriptamos
+    # Motor de descifrado y desencriptamos
     cipher = AES.new(clave_bytes, AES.MODE_CBC, iv_bytes)
     desencriptado = unpad(cipher.decrypt(data), AES.block_size)
     
