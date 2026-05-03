@@ -1,13 +1,13 @@
 limite = 52
 alfabeto = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 vigenere = []
-    
+
 for i in range(0,limite):
     vigenere.append(alfabeto.copy())
     alfabeto.append(alfabeto.pop(0))
 
 clave = input("introduce la clave: ").strip()
-mensaje = input("introduzca el mensaje cifrado:  ").strip()
+mensaje = input("introduzca el mensaje a cifrar:  ").strip()
 
 claves = []
 
@@ -23,20 +23,20 @@ else:
         for j in range(len(clave)):
             claves.append(clave[j])
 
-
 longClave = len(claves)
+
 def buscar(x, y):
     i = 0
     while vigenere[i][0] != x:
-        i += 1
-    lista = vigenere[i]
+        i += 1        
     j = 0
-    while y != lista[j]:
+    while alfabeto[j] != y:
         j += 1
-    return alfabeto[j]
+    return vigenere[i][j]
+
 res = []
 for i in range(0, longClave):
     res.append(buscar(claves[i], mensaje[i]))
 
 resultado = "".join(res)
-print("El mensaje descifrado es: " + resultado)  
+print("El mensaje cifrado es: " + resultado)
