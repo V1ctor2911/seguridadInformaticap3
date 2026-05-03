@@ -1,5 +1,5 @@
 def function(n):    
-    nombre = input("Escriba la palabra a codificar:\n").upper()
+    nombre = input("Escriba la palabra a descodificar:\n").upper()
     cadena = ""
     abecedario = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     

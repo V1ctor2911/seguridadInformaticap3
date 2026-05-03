@@ -1,4 +1,3 @@
-
 def function(n):    
     nombre = input("Escriba la palabra a codificar:\n").upper()
     cadena = ""
@@ -14,10 +13,6 @@ def function(n):
             index = (j-n) % len(abecedario)
             cadena = cadena + abecedario[index] 
     print(cadena)  
-
-
-
-
 
 
 
